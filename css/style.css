@@ -15,97 +15,6 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
-/* The Modal (background) */
-.popup-modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  /* Black background with transparency */
-  align-items: center;
-  justify-content: center;
-}
-
-/* The Modal (background) */
-.popup-modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  /* Black background with transparency */
-  align-items: center;
-  justify-content: center;
-}
-
-/* Modal Content */
-.popup-content {
-  background-color: #fff;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 40px;
-  position: relative;
-  /* Ensure the content is the reference point for the close button */
-  text-align: center;
-}
-
-/* Close Button */
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  color: #aaa;
-  font-size: 28px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.close-btn:hover {
-  color: black;
-}
-
-/* Modal Content */
-.popup-content {
-  background-color: #fff;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 750px;
-  height: 350px;
-  max-width: 4000px;
-  text-align: center;
-}
-
-/* Close Button */
-.close-btn {
-  display: inline-block;
-  color: #aaa;
-  font-size: 28px;
-  font-weight: bold;
-  text-decoration: none;
-  position: absolute;
-  right: 20px;
-  top: 10px;
-}
-
-.close-btn:hover {
-  color: black;
-}
-
-/* Show the modal when the page loads using :target */
-#popupModal:target {
-  display: flex;
-}
-
 /*Header*/
 
 header {
@@ -113,7 +22,7 @@ header {
   left: 0px;
   top: 0px;
   width: 100%;
-  z-index: 10;
+  z-index: -1;
   background-color: #000000;
   padding: 15px 15px;
 }
@@ -143,7 +52,7 @@ header .nav {
   top: 0;
   right: 0;
   height: 100%;
-  z-index: 99;
+  z-index: -1;
   padding: 100px 0px 15px;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
@@ -211,7 +120,7 @@ header .nav ul li a:hover::before {
 header .ham-burger {
   display: inline-block;
   position: relative;
-  z-index: 100;
+  z-index: -1;
 }
 
 header .ham-burger span {
